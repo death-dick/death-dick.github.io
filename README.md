@@ -1,2 +1,2 @@
 # death-dick.github.io
-hi
+im dumb, this is my dumb website haha
