@@ -4,7 +4,7 @@
 
   var xhttp = new XMLHttpRequest();
   var mymessage1 = {"consumer_key":"1234-abcd1234abcd1234abcd1234", "redirect_uri":"pocketapp1234:authorizationFinished"};
-  var mymessage = mymessage1.stringify;
+  var mymessage = JSON.stringify(mymessage1);
   xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
         var myJSON = JSON.stringify(this.responseText);
