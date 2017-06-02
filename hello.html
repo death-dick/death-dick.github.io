@@ -10,7 +10,9 @@
         document.getElementById("demo").innerHTML = myJSON;
       }
       else {
-        document.getElementById("demo").innerHTML = "this didn't work " + this.readyState + " " + this.status;
+        var num1 = this.readyState;
+        var num2 = this.status;
+        document.getElementById("demo").innerHTML = "this didn't work " + num1 + " " + num2;
       }
   };
   xhttp.open("POST", "https://getpocket.com/v3/oauth/request", true);
