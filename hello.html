@@ -12,6 +12,9 @@
         var myJSON = JSON.stringify(this.responseText);
         document.getElementById("demo").innerHTML = myJSON;
       }
+      else {
+        document.getElementById("demo").innerHTML = "this didn't work";
+      }
   };
   xhttp.open("POST", "https://getpocket.com/v3/get", true);
   xhttp.setRequestHeader("Content-type", "application/json");
