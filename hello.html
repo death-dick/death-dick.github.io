@@ -17,6 +17,7 @@
       }
   };
   xhttp.open("POST", "https://getpocket.com/v3/get", true);
+  xhttp.setRequestHeader("Host", "getpocket.com");
   xhttp.setRequestHeader("Content-type", "application/json");
   xhttp.send(mymessage);
   
